@@ -50,9 +50,6 @@ sudo apt install php7.4-mbstring
 sudo apt-get install php7.4-curl
 ```
 ```
-sudo apt-get install php7.4-curl
-```
-```
 *composer update
 ```
 
