@@ -54,6 +54,8 @@ sudo apt-get install php7.4-curl
 ```
 
 Visit= https://www.digitalocean.com/community/tutorials/how-to-deploy-a-laravel-application-with-nginx-on-ubuntu-16-04
+
+
 -------------------------------------------------------------------------------------------------------
 
 
