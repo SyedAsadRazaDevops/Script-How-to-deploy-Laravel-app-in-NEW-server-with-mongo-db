@@ -47,12 +47,21 @@ sudo apt install php7.4-mbstring
 *sudo pecl install mongodb
 ```
 ```
+sudo apt-get install php7.4-curl
+```
+```
+sudo apt-get install php7.4-curl
+```
+```
 *composer update
 ```
 
-==============================================================
 
->Error
+-------------------------------------------------------------------------------------------------------
+
+
+
+> Error = 1
 ```
 80 packages you are using are looking for funding.
 Use the command to find out more!
@@ -87,6 +96,23 @@ Use the `composer fund` command to find out more!
 ```
 composer fund
 ```
+
+>Error = 2 (php7.4-curl)
+```
+Problem 1
+    - Installation request for multicaret/laravel-unifonic ^2.0 -> satisfiable by multicaret/laravel-unifonic[v2.0.0].
+    - multicaret/laravel-unifonic v2.0.0 requires ext-curl * -> the requested PHP extension curl is missing from your system.
+  
+  
+  Problem 2
+    - pusher/pusher-php-server v5.0.1 requires ext-curl * -> the requested PHP extension curl is missing from your system.
+    - pusher/pusher-php-server 5.0.x-dev requires ext-curl * -> the requested PHP extension curl is missing from your system.
+    - pusher/pusher-php-server 5.0.3 requires ext-curl * -> the requested PHP extension curl is missing from your system.
+    - pusher/pusher-php-server 5.0.2 requires ext-curl * -> the requested PHP extension curl is missing from your system.
+    - Installation request for pusher/pusher-php-server ^5.0.1 -> satisfiable by pusher/pusher-php-server[5.0.2, 5.0.3, 5.0.x-dev, v5.0.1].
+```
+
+
 visit: https://stackoverflow.com/questions/63731920/is-there-a-way-to-hide-funding-messages-when-running-composer-commands
 
 
