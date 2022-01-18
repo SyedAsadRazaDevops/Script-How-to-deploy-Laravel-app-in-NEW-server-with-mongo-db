@@ -41,7 +41,7 @@ sudo add-apt-repository ppa:ondrej/php
 *sudo apt-get install php7.4-mongodb
 *sudo apt-get install php7.4-dev
 *sudo apt install php-xml
-sudo apt install php7.4-gd
+*sudo apt install php7.4-gd
 sudo apt install php7.4-mbstring
 *sudo apt install php7.4-zip
 *sudo pecl install mongodb
