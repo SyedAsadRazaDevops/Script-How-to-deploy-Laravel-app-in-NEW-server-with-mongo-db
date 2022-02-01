@@ -1,6 +1,6 @@
 # Script-who-to-deploy-laravel-app-in-NEW-server-with-mongo-db
 
-Step 1 — Installing Package Dependencies
+# Step 1 — Installing Package Dependencies
 
 To run Laravel applications, you’ll need some PHP extensions and a PHP dependency manager called Composer in addition to the basic LEMP stack.
 Start by updating the package manager cache.
@@ -11,7 +11,7 @@ The PHP extensions you’ll need are for multi-byte string support and XML suppo
 ```
 sudo apt-get install php7.4-mbstring php7.4-xml composer unzip
 ```
-Step 3 — Setting Up the Demo Application
+# Step 2 — Setting Up the Application
 
 The demo quickstart application, distributed by Laravel on GitHub.
 Move to the new directory and clone the demo application using Git.
@@ -20,7 +20,7 @@ cd /public_html
 git clone https://github.com/laravel/xxxxxxxxxx .
 ```
 
-Step 4 — Configuring the Application Environment
+# Step 3 — Configuring the Application Environment
 
 In this step, we’ll modify some security-related application settings, allow the application to connect to the database, and prepare the database for usage. These are necessary steps for all LEMP-backed Laravel applications, not just the demo application we’re using here.
 
@@ -28,7 +28,7 @@ Open the Laravel environment configuration file with nano or your favorite text 
 ```
 sudo nano /var/www/html/quickstart/.env
 ```
-Step 5 - 
+# Step 4 - 
 
 Next, we need to install the project dependencies. Laravel utilizes Composer to handle dependency management, which makes it easy to install the necessary packages in one go.
 ```
@@ -76,7 +76,7 @@ sudo php artisan route:clear
 
 
 
-> Error = 1
+# Error = 1
 ```
 80 packages you are using are looking for funding.
 Use the command to find out more!
@@ -112,7 +112,7 @@ Use the `composer fund` command to find out more!
 composer fund
 ```
 
->Error = 2 (php7.4-curl)
+# Error = 2 (php7.4-curl)
 ```
 Problem 1
     - Installation request for multicaret/laravel-unifonic ^2.0 -> satisfiable by multicaret/laravel-unifonic[v2.0.0].
