@@ -57,6 +57,20 @@ sudo apt-get install php7.4-curl
 
 Visit= https://www.digitalocean.com/community/tutorials/how-to-deploy-a-laravel-application-with-nginx-on-ubuntu-16-04
 
+# run this command for first time
+```
+sudo php artisan config:clear
+sudo php artisan config:cache
+sudo php artisan optimize:clear
+sudo php artisan cache:clear
+```
+```
+sudo composer dump-autoload
+sudo php artisan view:clear
+sudo php artisan route:clear
+```
+
+
 
 -------------------------------------------------------------------------------------------------------
 
