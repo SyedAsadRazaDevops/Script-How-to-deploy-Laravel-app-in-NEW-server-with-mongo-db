@@ -108,7 +108,7 @@ server {
 
 ```
 
-# Error = 1
+# Its not an error,composer runing fine, and these pakeges are not mendatory.
 _____________________________________________________________________________________________________
 ```
 80 packages you are using are looking for funding.
