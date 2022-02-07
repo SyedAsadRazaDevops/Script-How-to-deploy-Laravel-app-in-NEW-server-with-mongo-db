@@ -107,6 +107,16 @@ server {
 }
 
 ```
+Next, you need to create a symbolic link within the sites-enabled directory that points out to this configuration file:
+```
+sudo ln -s /etc/nginx/sites-available/<my-nginx-file-name> /etc/nginx/sites-enabled
+```
+# Assing permisstion to these files:
+```
+sudo chmod -R 777 ./storage
+sudo chmod -R 777 ./bootstrap/
+```
+
 
 # Its not an error,composer runing fine, and these pakeges are not mendatory.
 _____________________________________________________________________________________________________
