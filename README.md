@@ -69,14 +69,45 @@ sudo composer dump-autoload
 sudo php artisan view:clear
 sudo php artisan route:clear
 ```
+# NGINX Site-Avalible
 
+Once on the server, look for your web server configuration in /etc/nginx/sites-enabled. There is also a directory called sites-allowed; this directory includes configurations that are not necessarily activated. Once you find the configuration file, display the output in your terminal with the following command:
+```
+cat /etc/nginx/sites-enabled/your_domain
+```
+If your site has no HTTPS certificate, you will receive a result similar to this:
 
+Output
+```
+server {
+    server_name <my-domain> www.<my-domain>;
+    root <my-project-path>/public;
+    index index.php;
 
--------------------------------------------------------------------------------------------------------
+    charset utf-8;
 
+    location / {
+        try_files $uri $uri/ /index.php?$query_string;
+    }
 
+    error_page 404 /index.php;
+
+    location ~ \.php$ {
+        fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
+        fastcgi_param SCRIPT_FILENAME $realpath_root$fastcgi_script_name;
+        include fastcgi_params;
+    }
+
+    location ~ /\.(?!well-known).* {
+        deny all;
+    }
+
+}
+
+```
 
 # Error = 1
+_____________________________________________________________________________________________________
 ```
 80 packages you are using are looking for funding.
 Use the command to find out more!
