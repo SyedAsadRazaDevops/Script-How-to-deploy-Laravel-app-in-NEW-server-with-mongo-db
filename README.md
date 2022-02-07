@@ -80,6 +80,8 @@ If your site has no HTTPS certificate, you will receive a result similar to this
 Output
 ```
 server {
+    listen 80;
+    listen [::]:80;
     server_name <my-domain> www.<my-domain>;
     root <my-project-path>/public;
     index index.php;
