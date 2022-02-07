@@ -145,7 +145,7 @@ Use the `composer fund` command to find out more!
 composer fund
 ```
 
-# Error = 2 (php7.4-curl)
+# Error (php7.4-curl)
 ```
 Problem 1
     - Installation request for multicaret/laravel-unifonic ^2.0 -> satisfiable by multicaret/laravel-unifonic[v2.0.0].
