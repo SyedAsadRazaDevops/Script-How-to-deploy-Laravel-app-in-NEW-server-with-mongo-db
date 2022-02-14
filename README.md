@@ -111,6 +111,22 @@ Next, you need to create a symbolic link within the sites-enabled directory that
 ```
 sudo ln -s /etc/nginx/sites-available/<my-nginx-file-name> /etc/nginx/sites-enabled
 ```
+>Make sure to check that there are no syntax errors in the configuration.
+```
+sudo nginx -t
+```
+If all changes were successful, you will get a result that looks like this:
+>Output
+```
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+```
+If that is the case, you can safely restart Nginx to put the changes in effect.
+```
+sudo systemctl restart nginx
+```
+
+
 # Assing permisstion to these files:
 ```
 sudo chmod -R 777 ./storage
