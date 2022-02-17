@@ -39,14 +39,14 @@ composer install
 ```
 sudo apt install php7.4-fpm
 sudo add-apt-repository ppa:ondrej/php
-sudo apt-get install php7.4-mongodb
+sudo apt-get install php7.4-mongodb -y
 sudo apt-get install php7.4-dev
 sudo apt install php-xml
 sudo apt install php7.4-gd
 sudo apt install php7.4-mbstring
-sudo apt install php7.4-zip
+sudo apt install php7.4-zip -y
 sudo pecl install mongodb
-sudo apt install mongodb
+sudo apt install mongodb -y
 ```
 ```
 sudo apt-get install php7.4-curl
@@ -136,8 +136,8 @@ sudo systemctl restart nginx
 
 # Assing permisstion to these files:
 ```
-sudo chmod -R 777 ./storage
-sudo chmod -R 777 ./bootstrap/
+sudo chmod -R 775 ./storage
+sudo chmod -R 775 ./bootstrap/
 ```
 
 
