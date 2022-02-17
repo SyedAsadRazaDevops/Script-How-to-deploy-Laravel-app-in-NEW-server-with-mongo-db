@@ -52,6 +52,9 @@ sudo apt install mongodb
 sudo apt-get install php7.4-curl
 ```
 ```
+sudo snap install cipher-files
+```
+```
 *composer update
 ```
 ```
