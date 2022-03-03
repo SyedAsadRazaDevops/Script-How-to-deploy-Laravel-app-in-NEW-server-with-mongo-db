@@ -32,7 +32,7 @@ sudo nano /var/www/html/quickstart/.env
 
 Next, we need to install the project dependencies. Laravel utilizes Composer to handle dependency management, which makes it easy to install the necessary packages in one go.
 ```
-composer install
+apt install composer 
 ```
 
 >in case of any error install these dependies (*)recomended commands
