@@ -64,6 +64,15 @@ composer require maatwebsite/excel --update-with-dependencies
 
 Visit= https://www.digitalocean.com/community/tutorials/how-to-deploy-a-laravel-application-with-nginx-on-ubuntu-16-04
 
+# for php 8.0
+```
+ sudo apt install php
+```
+```
+ sudo apt install php8.0-common php8.0-mysql php8.0-cgi php8.0-mbstring php8.0-curl php8.0-gd php8.0-xml php8.0-xmlrpc php-pear php8.0-fpm
+```
+
+
 # run this command for first time
 ```
 sudo php artisan config:clear
@@ -76,6 +85,8 @@ sudo composer dump-autoload
 sudo php artisan view:clear
 sudo php artisan route:clear
 ```
+
+
 # NGINX Site-Avalible
 
 Once on the server, look for your web server configuration in /etc/nginx/sites-enabled. There is also a directory called sites-allowed; this directory includes configurations that are not necessarily activated. Once you find the configuration file, display the output in your terminal with the following command:
