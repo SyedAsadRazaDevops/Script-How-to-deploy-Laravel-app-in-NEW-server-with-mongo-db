@@ -143,7 +143,10 @@ If that is the case, you can safely restart Nginx to put the changes in effect.
 ```
 sudo systemctl restart nginx
 ```
-
+# Check what user PHP-FPM is running as (it's www-data)
+```
+ps aux | grep php
+```
 
 # Assing permisstion to these files:
 ```
