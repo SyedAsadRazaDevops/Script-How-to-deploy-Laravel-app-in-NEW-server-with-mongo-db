@@ -51,6 +51,17 @@ sudo apt install mongodb -y
 ```
 sudo apt-get install php7.4-curl
 ```
+>FOR PHP-8.1 INSTALLATION PROCESS
+```
+sudo apt install php8.1-fpm
+sudo add-apt-repository ppa:ondrej/php
+sudo apt-get install php8.1-mongodb -y
+sudo apt-get install php8.1-dev
+sudo apt install php8.1-xml
+sudo apt install php8.1-gd
+sudo apt install php8.1-mbstring
+sudo apt install php8.1-zip -y
+```
 ```
 sudo snap install cipher-files
 ```
