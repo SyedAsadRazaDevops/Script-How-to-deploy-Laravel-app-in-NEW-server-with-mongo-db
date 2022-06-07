@@ -61,6 +61,7 @@ sudo apt install php8.1-xml
 sudo apt install php8.1-gd
 sudo apt install php8.1-mbstring
 sudo apt install php8.1-zip -y
+sudo apt-get install php8.1-curl
 ```
 ```
 sudo snap install cipher-files
