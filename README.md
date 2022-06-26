@@ -37,13 +37,13 @@ apt install composer
 
 >in case of any error install these dependies (*)recomended commands
 ```
-sudo apt install php7.4-fpm
+sudo apt install php7.4-fpm -y
 sudo add-apt-repository ppa:ondrej/php
 sudo apt-get install php7.4-mongodb -y
-sudo apt-get install php7.4-dev
-sudo apt install php7.4-xml
-sudo apt install php7.4-gd
-sudo apt install php7.4-mbstring
+sudo apt-get install php7.4-dev -y
+sudo apt install php7.4-xml -y
+sudo apt install php7.4-gd -y
+sudo apt install php7.4-mbstring -y
 sudo apt install php7.4-zip -y
 sudo pecl install mongodb
 sudo apt install mongodb -y
@@ -53,15 +53,15 @@ sudo apt-get install php7.4-curl
 ```
 >FOR PHP-8.1 INSTALLATION PROCESS
 ```
-sudo apt install php8.1-fpm
+sudo apt install php8.1-fpm -y
 sudo add-apt-repository ppa:ondrej/php
 sudo apt-get install php8.1-mongodb -y
-sudo apt-get install php8.1-dev
-sudo apt install php8.1-xml
-sudo apt install php8.1-gd
-sudo apt install php8.1-mbstring
+sudo apt-get install php8.1-dev -y
+sudo apt install php8.1-xml -y
+sudo apt install php8.1-gd -y
+sudo apt install php8.1-mbstring -y
 sudo apt install php8.1-zip -y
-sudo apt-get install php8.1-curl
+sudo apt-get install php8.1-curl -y
 ```
 ```
 sudo snap install cipher-files
@@ -96,6 +96,42 @@ sudo php artisan cache:clear
 sudo composer dump-autoload
 sudo php artisan view:clear
 sudo php artisan route:clear
+```
+
+# Install MongoDB 5 on Ubuntu 20.04|
+Import the public key used by the package management system.
+```
+wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -
+```
+```
+sudo apt-get install gnupg
+```
+Create a list file for MongoDB
+```
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/5.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-5.0.list
+```
+Reload local package database.
+```
+sudo apt-get update
+```
+Install the MongoDB packages.
+```
+sudo apt-get install -y mongodb-org
+```
+Start MongoDB.
+```
+sudo systemctl start mongod
+```
+If you receive an error
+```
+sudo systemctl daemon-reload
+or
+sudo systemctl start mongod
+```
+Verify that MongoDB has started successfully.
+```
+sudo systemctl status mongod
+sudo systemctl enable mongod
 ```
 
 
