@@ -134,6 +134,12 @@ sudo systemctl status mongod
 sudo systemctl enable mongod
 ```
 
+```
+php artisan make:admin
+php artisan add:data
+```
+
+
 
 # NGINX Site-Avalible
 
