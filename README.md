@@ -156,12 +156,10 @@ and then (to make sure that no mongo packages are left):
 ```
 dpkg -l | grep mongo
 ```
+```
 sudo apt-get install mongodb-org --fix-missing --fix-broken
 sudo apt-get autoremove mongodb-org --fix-missing --fix-broken
 ```
-
-
-
 # NGINX Site-Avalible
 
 Once on the server, look for your web server configuration in /etc/nginx/sites-enabled. There is also a directory called sites-allowed; this directory includes configurations that are not necessarily activated. Once you find the configuration file, display the output in your terminal with the following command:
