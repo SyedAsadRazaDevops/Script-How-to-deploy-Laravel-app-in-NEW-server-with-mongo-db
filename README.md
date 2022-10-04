@@ -138,6 +138,27 @@ sudo systemctl enable mongod
 php artisan make:admin
 php artisan add:data
 ```
+## Uninstall mongodb
+
+First list all packages that contain mongo in their names or their descriptions):
+```
+dpkg -l | grep mongo
+```
+Go to /tmp and find mongodb sock
+```
+cd /tmp; ls -l *.sock
+```
+In summary, I would do (to purge all packages that start with mongo):
+```
+sudo apt purge mongo*
+```
+and then (to make sure that no mongo packages are left):
+```
+dpkg -l | grep mongo
+```
+sudo apt-get install mongodb-org --fix-missing --fix-broken
+sudo apt-get autoremove mongodb-org --fix-missing --fix-broken
+```
 
 
 
