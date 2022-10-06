@@ -1,4 +1,4 @@
-# Script-who-to-deploy-laravel-app-in-NEW-server-with-mongo-db
+# Script-how-to-deploy-laravel-app-in-NEW-server-with-mongo-db
 
 # Step 1 — Installing Package Dependencies
 
