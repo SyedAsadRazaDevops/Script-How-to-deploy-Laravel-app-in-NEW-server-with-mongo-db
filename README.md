@@ -38,7 +38,7 @@ apt install composer
 >in case of any error install these dependies (*)recomended commands
 ```
 sudo apt install php7.4-fpm -y
-sudo add-apt-repository ppa:ondrej/php
+sudo add-apt-repository --yes ppa:ondrej/php
 sudo apt-get install php7.4-mongodb -y
 sudo apt-get install php7.4-dev -y
 sudo apt install php7.4-xml -y
@@ -54,7 +54,7 @@ sudo apt-get install php7.4-curl
 >FOR PHP-8.1 INSTALLATION PROCESS
 ```
 sudo apt install php8.1-fpm -y
-sudo add-apt-repository ppa:ondrej/php
+sudo add-apt-repository --yes ppa:ondrej/php
 sudo apt-get install php8.1-mongodb -y
 sudo apt-get install php8.1-dev -y
 sudo apt install php8.1-xml -y
