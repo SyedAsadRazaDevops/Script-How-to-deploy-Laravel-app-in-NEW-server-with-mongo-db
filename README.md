@@ -1,17 +1,12 @@
-# Script-how-to-deploy-laravel-app-in-NEW-server-with-mongo-db
 
-# Step 1 — Installing Package Dependencies
 
-To run Laravel applications, you’ll need some PHP extensions and a PHP dependency manager called Composer in addition to the basic LEMP stack.
-Start by updating the package manager cache.
+# Step 1 
+##—------ UPDATE THE UBUNTU PACKEGES AND REPOSITORY---------------------------------#
 ```
 sudo apt-get update
 ```
-The PHP extensions you’ll need are for multi-byte string support and XML support. You can install these extensions, Composer, and unzip (which allows Composer to handle zip files) at the same time.
-```
-sudo apt-get install php7.4-mbstring php7.4-xml composer unzip
-```
-# Step 2 — Setting Up the Application
+# Step 2 
+##—------ GIT CLONE THE REPO--------------------------------------------------------#
 
 The demo quickstart application, distributed by Laravel on GitHub.
 Move to the new directory and clone the demo application using Git.
@@ -20,23 +15,25 @@ cd /public_html
 git clone https://github.com/laravel/xxxxxxxxxx .
 ```
 
-# Step 3 — Configuring the Application Environment
-
+# Step 3 
+##—------ CONFIGURE THE SECURIT/.ENV FILE FOR PROJECT-------------------------------#
 In this step, we’ll modify some security-related application settings, allow the application to connect to the database, and prepare the database for usage. These are necessary steps for all LEMP-backed Laravel applications, not just the demo application we’re using here.
 
 Open the Laravel environment configuration file with nano or your favorite text editor.
 ```
 sudo nano /var/www/html/quickstart/.env
 ```
-# Step 4 - 
+# Step 4 
+##—------ INSTALL PHP/LARAVEL AND SOME PACKEGES-------------------------------------#
 
-Next, we need to install the project dependencies. Laravel utilizes Composer to handle dependency management, which makes it easy to install the necessary packages in one go.
-```
-apt install composer 
-```
+we need to install the project dependencies. Laravel utilizes Composer to handle dependency management, which makes it easy to install the necessary packages in one go.
+
+**vist to install latest composer version** : https://github.com/SyedAsadRazaDevops/How-to-install-latest-version-compoer-for-Laravel-on-ubuntu
 
 >in case of any error install these dependies (*)recomended commands
 ```
+sudo add-apt-repository --yes ppa:ondrej/php
+sudo apt-get install php7.4-curl
 sudo apt install php7.4-fpm -y
 sudo add-apt-repository --yes ppa:ondrej/php
 sudo apt-get install php7.4-mongodb -y
@@ -45,16 +42,11 @@ sudo apt install php7.4-xml -y
 sudo apt install php7.4-gd -y
 sudo apt install php7.4-mbstring -y
 sudo apt install php7.4-zip -y
-sudo pecl install mongodb
-sudo apt install mongodb -y
-```
-```
-sudo apt-get install php7.4-curl
 ```
 >FOR PHP-8.1 INSTALLATION PROCESS
 ```
-sudo apt install php8.1-fpm -y
 sudo add-apt-repository --yes ppa:ondrej/php
+sudo apt install php8.1-fpm -y
 sudo apt-get install php8.1-mongodb -y
 sudo apt-get install php8.1-dev -y
 sudo apt install php8.1-xml -y
@@ -63,42 +55,14 @@ sudo apt install php8.1-mbstring -y
 sudo apt install php8.1-zip -y
 sudo apt-get install php8.1-curl -y
 ```
+> for php 8.0
 ```
-sudo snap install cipher-files
-```
-```
-*composer update
-```
-```
-sudo apt-get install php-zip&&sudo apt-get install php-gd
-composer require maatwebsite/excel --update-with-dependencies
+ sudo apt-get install php8.0-common php8.0-mysql php8.0-cgi php8.0-mbstring php8.0-curl php8.0-gd php8.0-xml php8.0-xmlrpc php-pear php8.0-fpm php8.0-mongodb
 ```
 
-Visit= https://www.digitalocean.com/community/tutorials/how-to-deploy-a-laravel-application-with-nginx-on-ubuntu-16-04
-
-# for php 8.0
-```
- sudo apt install php
-```
-```
- sudo apt install php8.0-common php8.0-mysql php8.0-cgi php8.0-mbstring php8.0-curl php8.0-gd php8.0-xml php8.0-xmlrpc php-pear php8.0-fpm
-```
-
-
-# run this command for first time
-```
-sudo php artisan config:clear
-sudo php artisan config:cache
-sudo php artisan optimize:clear
-sudo php artisan cache:clear
-```
-```
-sudo composer dump-autoload
-sudo php artisan view:clear
-sudo php artisan route:clear
-```
-
-# Install MongoDB 5 on Ubuntu 20.04|
+# Step 5 
+##—------ INSTALL MONGODB DATABASE YOU CAN USE MYSQL DEPEND ON PROJECT--------------#
+### Install MongoDB 5 on Ubuntu 20.04|
 Import the public key used by the package management system.
 ```
 wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -
@@ -134,12 +98,8 @@ sudo systemctl status mongod
 sudo systemctl enable mongod
 ```
 
-```
-php artisan make:admin
-php artisan add:data
-```
-## Uninstall mongodb
-
+### Uninstall mongodb
+**OR IN-CASE TO REINSTALL AND UPGRAGE THE DATABASE**
 First list all packages that contain mongo in their names or their descriptions):
 ```
 dpkg -l | grep mongo
@@ -160,7 +120,26 @@ dpkg -l | grep mongo
 sudo apt-get install mongodb-org --fix-missing --fix-broken
 sudo apt-get autoremove mongodb-org --fix-missing --fix-broken
 ```
-# NGINX Site-Avalible
+
+# Step 6 
+##—------ RUN THESE COMMAND TO CLEAR CACHE AND ETC--------------------------------#
+```
+sudo php artisan config:clear
+sudo php artisan config:cache
+sudo php artisan optimize:clear
+sudo php artisan cache:clear
+sudo composer dump-autoload
+sudo php artisan view:clear
+sudo php artisan route:clear
+```
+OPPTINAL(some data-seeder/migration command depend on developers)
+```
+php artisan make:admin
+php artisan add:data
+```
+
+# Step 7
+##—------ CONFIGRATION BLOCK FOR SERVER NGINX-------------------------------------#
 
 Once on the server, look for your web server configuration in /etc/nginx/sites-enabled. There is also a directory called sites-allowed; this directory includes configurations that are not necessarily activated. Once you find the configuration file, display the output in your terminal with the following command:
 ```
@@ -226,7 +205,7 @@ ps aux | grep php
 sudo chmod -R 775 ./storage
 sudo chmod -R 775 ./bootstrap/
 ```
-
+##—------ DONE------------------------------------------------------------------#
 
 # Its not an error,composer runing fine, and these pakeges are not mendatory.
 _____________________________________________________________________________________________________
