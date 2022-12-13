@@ -30,7 +30,8 @@ we need to install the project dependencies. Laravel utilizes Composer to handle
 
 **vist to install latest composer version** : https://github.com/SyedAsadRazaDevops/How-to-install-latest-version-compoer-for-Laravel-on-ubuntu
 
->in case of any error install these dependies (*)recomended commands
+in case of any error install these dependies (*)recomended commands
+>FOR PHP-7.4 INSTALLATION PROCESS
 ```
 sudo add-apt-repository --yes ppa:ondrej/php
 sudo apt-get install php7.4-curl
@@ -55,9 +56,16 @@ sudo apt install php8.1-mbstring -y
 sudo apt install php8.1-zip -y
 sudo apt-get install php8.1-curl -y
 ```
-> for php 8.0
+>FOR PHP-8.2 INSTALLATION PROCESS
 ```
- sudo apt-get install php8.0-common php8.0-mysql php8.0-cgi php8.0-mbstring php8.0-curl php8.0-gd php8.0-xml php8.0-xmlrpc php-pear php8.0-fpm php8.0-mongodb
+sudo apt install php8.2-fpm -y
+sudo apt-get install php8.2-mongodb -y
+sudo apt-get install php8.2-dev -y
+sudo apt install php8.2-xml -y
+sudo apt install php8.2-gd -y
+sudo apt install php8.2-mbstring -y
+sudo apt install php8.2-zip -y
+sudo apt-get install php8.2-curl -y
 ```
 
 # Step 5 
