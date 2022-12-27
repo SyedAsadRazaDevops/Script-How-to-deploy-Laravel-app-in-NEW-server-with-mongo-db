@@ -67,6 +67,8 @@ sudo apt install php8.2-mbstring -y
 sudo apt install php8.2-zip -y
 sudo apt-get install php8.2-curl -y
 ```
+**you can switch the alyernaative vertion in ubuntu if you have already install by just this command:** `sudo update-alternatives --config php`
+<img width="929" alt="Screenshot 2022-12-27 at 2 52 56 PM" src="https://user-images.githubusercontent.com/71556060/209648487-4d7c36aa-3fcc-46ac-a020-334b79b36a93.png">
 
 # Step 5 
 ##—------ INSTALL MONGODB DATABASE YOU CAN USE MYSQL DEPEND ON PROJECT--------------#
