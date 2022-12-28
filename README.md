@@ -154,7 +154,7 @@ php artisan add:data
 # Step 7
 ##—------ CONFIGRATION BLOCK FOR SERVER NGINX-------------------------------------#
 
-**To install the latest version of nginx, use this link: **https://github.com/SyedAsadRazaDevops/who-to-install-and-upgrade-nginx-1.20-on-Ubuntu-20.04
+**To install the latest version of nginx, use this link: ** https://github.com/SyedAsadRazaDevops/who-to-install-and-upgrade-nginx-1.20-on-Ubuntu-20.04
 
 Once on the server, look for your web server configuration in /etc/nginx/sites-enabled. There is also a directory called sites-allowed; this directory includes configurations that are not necessarily activated. Once you find the configuration file, display the output in your terminal with the following command:
 ```
