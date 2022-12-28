@@ -73,6 +73,9 @@ sudo apt-get install php8.2-curl -y
 # Step 5 
 ##—------ INSTALL MONGODB DATABASE YOU CAN USE MYSQL DEPEND ON PROJECT--------------#
 ### Install MongoDB 5 on Ubuntu 20.04|
+
+**To install the latest version of mongodb, use this link: ** https://www.mongodb.com/docs/manual/tutorial/install-mongodb-on-ubuntu/
+
 Import the public key used by the package management system.
 ```
 wget -qO - https://www.mongodb.org/static/pgp/server-5.0.asc | sudo apt-key add -
@@ -150,6 +153,8 @@ php artisan add:data
 
 # Step 7
 ##—------ CONFIGRATION BLOCK FOR SERVER NGINX-------------------------------------#
+
+**To install the latest version of nginx, use this link: **https://github.com/SyedAsadRazaDevops/who-to-install-and-upgrade-nginx-1.20-on-Ubuntu-20.04
 
 Once on the server, look for your web server configuration in /etc/nginx/sites-enabled. There is also a directory called sites-allowed; this directory includes configurations that are not necessarily activated. Once you find the configuration file, display the output in your terminal with the following command:
 ```
