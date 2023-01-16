@@ -73,7 +73,7 @@ sudo apt-get install php8.2-curl -y
 # Step 4.5
 ##—------ INSTALL LATEST COMPOSER IN UBUNTU --------------#
 
-https://github.com/SyedAsadRazaDevops/-How-to-downgrade-or-install-a-specific-version-of-Composer-1.8-to-2.0
+[How-to-downgrade-or-install-a-specific-version-of-Composer](https://github.com/SyedAsadRazaDevops/How-to-install-latest-version-compoer-for-Laravel-on-ubuntu)
 
 # Step 5 
 ##—------ INSTALL MONGODB DATABASE YOU CAN USE MYSQL DEPEND ON PROJECT--------------#
