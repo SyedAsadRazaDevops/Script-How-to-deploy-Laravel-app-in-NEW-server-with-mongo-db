@@ -70,6 +70,11 @@ sudo apt-get install php8.2-curl -y
 **you can switch the alternative PHP vertion in ubuntu, if you already had installed:** `sudo update-alternatives --config php`
 <img width="929" alt="Screenshot 2022-12-27 at 2 52 56 PM" src="https://user-images.githubusercontent.com/71556060/209648487-4d7c36aa-3fcc-46ac-a020-334b79b36a93.png">
 
+# Step 4.5
+##—------ INSTALL LATEST COMPOSER IN UBUNTU --------------#
+
+https://github.com/SyedAsadRazaDevops/-How-to-downgrade-or-install-a-specific-version-of-Composer-1.8-to-2.0
+
 # Step 5 
 ##—------ INSTALL MONGODB DATABASE YOU CAN USE MYSQL DEPEND ON PROJECT--------------#
 ### Install MongoDB 5 on Ubuntu 20.04|
