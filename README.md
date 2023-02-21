@@ -39,7 +39,7 @@ in case of any error install these dependies (*)recomended commands
 >FOR PHP-7.4 INSTALLATION PROCESS
 ```
 sudo add-apt-repository --yes ppa:ondrej/php
-sudo apt-get install php7.4-curl
+sudo apt-get install php7.4-curl -y
 sudo apt install php7.4-fpm -y
 sudo add-apt-repository --yes ppa:ondrej/php
 sudo apt-get install php7.4-mongodb -y
