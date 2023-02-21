@@ -230,10 +230,25 @@ ps aux | grep php
 sudo chmod -R 775 ./storage
 sudo chmod -R 775 ./bootstrap/
 ```
+# Step 7
+##—------ INSTALL CERTBOT FOR SSL NGINX-------------------------------------#
+```
+sudo apt install snapd
+sudo snap install core; sudo snap refresh core
+sudo snap install --classic certbot
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+```
+GENRATE SSL FOR DOMAINS
+```
+sudo certbot --nginx
+```
+
 ##—------ DONE------------------------------------------------------------------#
+
 
 # Its not an error,composer runing fine, and these pakeges are not mendatory.
 _____________________________________________________________________________________________________
+
 ```
 80 packages you are using are looking for funding.
 Use the command to find out more!
