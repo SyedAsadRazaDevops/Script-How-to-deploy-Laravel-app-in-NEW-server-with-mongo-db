@@ -14,6 +14,11 @@ Move to the new directory and clone the demo application using Git.
 cd /public_html
 git clone https://github.com/laravel/xxxxxxxxxx .
 ```
+**OR**
+you can create the new laravel project my the boiler-plate command:
+```
+composer create-project --prefer-dist laravel/laravel <project-name>
+```
 
 # Step 3 
 ##—------ CONFIGURE THE SECURIT/.ENV FILE FOR PROJECT-------------------------------#
