@@ -257,6 +257,19 @@ max_input_time = 12000
 memory_limit = 8192M
 ```
 
+### IF YOU WANT TO INCRESS THE LIMIT OF NGINX:
+PATH >  /etc/nginx/site-avalible/mydomail.com
+under location block:
+        
+```
+ location / {
+            proxy_read_timeout 1800;
+            proxy_connect_timeout 1800;
+            proxy_send_timeout 1800;
+            send_timeout 1800;
+            client_max_body_size 8048M;
+ ```
+ 
 
 visit: https://stackoverflow.com/questions/63731920/is-there-a-way-to-hide-funding-messages-when-running-composer-commands
 
