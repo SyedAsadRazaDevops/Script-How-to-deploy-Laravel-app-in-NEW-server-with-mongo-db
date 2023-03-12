@@ -245,58 +245,16 @@ sudo certbot --nginx
 
 ##—------ DONE------------------------------------------------------------------#
 
+### IF YOU WANT TO INCRESS THE LIMIT OF PHP:
+PATH > /etc/php/7.4/fpm/php.ini
+```
+;;;;;;;;;;;;;;;;;;;
+; Resource Limits ;
+;;;;;;;;;;;;;;;;;;;
 
-# Its not an error,composer runing fine, and these pakeges are not mendatory.
-_____________________________________________________________________________________________________
-
-```
-80 packages you are using are looking for funding.
-Use the command to find out more!
-```
->more details
-```
-root@eod:/home/eodmt/public_html/eod-mt# composer install
-Do not run Composer as root/super user! See https://getcomposer.org/root for details
-Loading composer repositories with package information
-Installing dependencies (including require-dev) from lock file
-Nothing to install or update
-Package fzaninotto/faker is abandoned, you should avoid using it. No replacement was suggested.
-Package swiftmailer/swiftmailer is abandoned, you should avoid using it. Use symfony/mailer instead.
-Generating optimized autoload files
-composer/package-versions-deprecated: Generating version class...
-composer/package-versions-deprecated: ...done generating version class
-> Illuminate\Foundation\ComposerScripts::postAutoloadDump
-> @php artisan package:discover --ansi
-Discovered Package: facade/ignition
-Discovered Package: fideloper/proxy
-Discovered Package: fruitcake/laravel-cors
-Discovered Package: jenssegers/mongodb
-Discovered Package: laravel/tinker
-Discovered Package: laravel/ui
-Discovered Package: nesbot/carbon
-Discovered Package: nunomaduro/collision
-Discovered Package: realrashid/sweet-alert
-Package manifest generated successfully.
-80 packages you are using are looking for funding.
-Use the `composer fund` command to find out more!
-```
-```
-composer fund
-```
-
-# Error (php7.4-curl)
-```
-Problem 1
-    - Installation request for multicaret/laravel-unifonic ^2.0 -> satisfiable by multicaret/laravel-unifonic[v2.0.0].
-    - multicaret/laravel-unifonic v2.0.0 requires ext-curl * -> the requested PHP extension curl is missing from your system.
-  
-  
-  Problem 2
-    - pusher/pusher-php-server v5.0.1 requires ext-curl * -> the requested PHP extension curl is missing from your system.
-    - pusher/pusher-php-server 5.0.x-dev requires ext-curl * -> the requested PHP extension curl is missing from your system.
-    - pusher/pusher-php-server 5.0.3 requires ext-curl * -> the requested PHP extension curl is missing from your system.
-    - pusher/pusher-php-server 5.0.2 requires ext-curl * -> the requested PHP extension curl is missing from your system.
-    - Installation request for pusher/pusher-php-server ^5.0.1 -> satisfiable by pusher/pusher-php-server[5.0.2, 5.0.3, 5.0.x-dev, v5.0.1].
+max_execution_time = 12000
+max_input_time = 12000
+memory_limit = 8192M
 ```
 
 
