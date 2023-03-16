@@ -269,7 +269,14 @@ under location block:
             send_timeout 1800;
             client_max_body_size 8048M;
  ```
- 
+So i have to adjust the **fastcgi_read_timeout** in my server configuration: 
+```
+location ~ \.php$ {
+     fastcgi_read_timeout 240;
+     ...
+ }
+``` 
+
 
 visit: https://stackoverflow.com/questions/63731920/is-there-a-way-to-hide-funding-messages-when-running-composer-commands
 
