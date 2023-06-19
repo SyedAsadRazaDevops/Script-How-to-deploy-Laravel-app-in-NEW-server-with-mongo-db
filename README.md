@@ -160,7 +160,11 @@ OPPTINAL(some data-seeder/migration command depend on developers)
 php artisan make:admin
 php artisan add:data
 ```
-
+```
+mkdir -p storage/framework/sessions
+mkdir -p storage/framework/views
+mkdir -p storage/framework/cache
+```
 # Step 7
 ##—------ CONFIGRATION BLOCK FOR SERVER NGINX-------------------------------------#
 
