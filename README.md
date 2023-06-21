@@ -38,6 +38,7 @@ we need to install the project dependencies. Laravel utilizes Composer to handle
 in case of any error install these dependies (*)recomended commands
 >FOR PHP-7.4 INSTALLATION PROCESS
 ```
+sudo apt-get install software-properties-common
 sudo add-apt-repository --yes ppa:ondrej/php
 sudo apt-get install php7.4-curl -y
 sudo apt install php7.4-fpm -y
@@ -51,6 +52,7 @@ sudo apt install php7.4-zip -y
 ```
 >FOR PHP-8.1 INSTALLATION PROCESS
 ```
+sudo apt-get install software-properties-common
 sudo add-apt-repository --yes ppa:ondrej/php
 sudo apt install php8.1-fpm -y
 sudo apt-get install php8.1-mongodb -y
@@ -63,6 +65,7 @@ sudo apt-get install php8.1-curl -y
 ```
 >FOR PHP-8.2 INSTALLATION PROCESS
 ```
+sudo apt-get install software-properties-common
 sudo apt install php8.2-fpm -y
 sudo apt-get install php8.2-mongodb -y
 sudo apt-get install php8.2-dev -y
