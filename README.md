@@ -123,6 +123,18 @@ Verify that MongoDB has started successfully.
 sudo systemctl status mongod
 sudo systemctl enable mongod
 ```
+### error on install mongo 
+
+ mongodb-org-mongos : Depends: libssl1.1 (>= 1.1.1) but it is not installable
+ mongodb-org-server : Depends: libssl1.1 (>= 1.1.1) but it is not installable
+
+```
+echo "deb http://security.ubuntu.com/ubuntu focal-security main" | sudo tee /etc/apt/sources.list.d/focal-security.list
+
+sudo apt-get update
+sudo apt-get install libssl1.1
+`````
+
 
 ### Uninstall mongodb
 **OR IN-CASE TO REINSTALL AND UPGRAGE THE DATABASE**
