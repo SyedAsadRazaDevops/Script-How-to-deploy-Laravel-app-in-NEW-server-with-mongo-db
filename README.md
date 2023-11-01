@@ -162,13 +162,13 @@ sudo apt-get autoremove mongodb-org --fix-missing --fix-broken
 # Step 6 
 ##—------ RUN THESE COMMAND TO CLEAR CACHE AND ETC--------------------------------#
 ```
-sudo php artisan config:clear
-sudo php artisan config:cache
-sudo php artisan optimize:clear
-sudo php artisan cache:clear
-sudo composer dump-autoload
-sudo php artisan view:clear
-sudo php artisan route:clear
+php artisan config:clear
+php artisan config:cache
+php artisan optimize:clear
+php artisan cache:clear
+composer dump-autoload
+php artisan view:clear
+php artisan route:clear
 ```
 OPPTINAL(some data-seeder/migration command depend on developers)
 ```
