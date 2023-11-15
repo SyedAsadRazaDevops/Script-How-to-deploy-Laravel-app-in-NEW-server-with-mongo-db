@@ -52,7 +52,7 @@ sudo apt install php7.4-zip -y
 ```
 >FOR PHP-8.1 INSTALLATION PROCESS
 ```
-sudo apt-get install software-properties-common
+sudo apt-get install software-properties-common 
 sudo add-apt-repository --yes ppa:ondrej/php
 sudo apt install php8.1-fpm -y
 sudo apt-get install php8.1-mongodb -y
@@ -62,6 +62,7 @@ sudo apt install php8.1-gd -y
 sudo apt install php8.1-mbstring -y
 sudo apt install php8.1-zip -y
 sudo apt-get install php8.1-curl -y
+sudo apt-get install php8.1-intl -y 
 ```
 >FOR PHP-8.2 INSTALLATION PROCESS
 ```
@@ -74,6 +75,8 @@ sudo apt install php8.2-gd -y
 sudo apt install php8.2-mbstring -y
 sudo apt install php8.2-zip -y
 sudo apt-get install php8.2-curl -y
+sudo apt-get install php8.1-intl -y
+
 ```
 **you can switch the alternative PHP vertion in ubuntu, if you already had installed:** `sudo update-alternatives --config php`
 <img width="929" alt="Screenshot 2022-12-27 at 2 52 56 PM" src="https://user-images.githubusercontent.com/71556060/209648487-4d7c36aa-3fcc-46ac-a020-334b79b36a93.png">
